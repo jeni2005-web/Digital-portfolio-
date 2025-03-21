@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atchaya M - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #84a6e9;
+            background-color: #d6e4ff; /* Light Blue Background */
         }
 
         header {
             background-color: #941919;
             color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        /* Profile Picture - Aligned Left Near Name */
+        .profile-picture {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px; /* Add some space between image and text */
+            border: 2px solid white;
         }
 
         .header-content h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
+            margin: 0;
         }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #555;
-            color: #ggg;
+    
+        nav{
+            background-color: #333;
             text-align: center;
+            padding: 0.5rem 0;
         }
 
         nav ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li {
@@ -51,53 +55,51 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #ggg;
+            color: #fff;
+            font-size: 1rem;
         }
 
         .section-content {
-            background-color: #ggg;
+            background-color: #fff;
             padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
+            margin: 1rem auto;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
             text-align: justify;
         }
 
         .download-button {
-            background-color: #555;
-            color: #ggg;
+            background-color: #333;
+            color: #fff;
             padding: 0.5rem 1rem;
             text-decoration: none;
             border-radius: 20px;
             display: inline-block;
             margin-top: 10px;
-            align-self: center;
         }
 
         .download-button:hover {
-            background-color: #ggg;
+            background-color: #555;
         }
 
         footer {
             text-align: center;
-            padding: 1rem 0;
-            background-color: #555;
-            color: #ggg;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
+
     <header>
+        <!-- Profile picture inside header, left-aligned near name -->
+        <img src=/storage/emulated/0/Download/IMG_20250319_183311.jpg alt="Jeni Princy S" class="profile-picture">
         <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="passport photo.jpg" alt="Your Profile Picture" class="profile-picture">
-            <h1>S.Jeni Princy </h1>
-            <p> College Student </p>
+            <h1>Jeni Princy.S</h1>
+            <p>B.Sc. Computer Science</p>
         </div>
     </header>
 
@@ -108,40 +110,35 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
-           
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>I'm a <b>web development</b> expert who is passionate about creating dynamic and user-friendly websites. 
-                I'm driven by the desire to craft high-performance web applications that enhance user experience and provide
-                 seamless digital solutions. With over 7 years of experience in the field, I'm dedicated to staying up to date 
-                 with the latest trends and innovations in the 
-                 web development landscape. I'm also committed to helping others learn more about web technologies, 
-                 best practices, and how to build secure and scalable websites.</p>
-
+            <p>I'm a passionate <b>Computer Science</b> student who loves coding and technology. I enjoy learning new programming concepts and developing projects that solve real-world problems.</p>
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p> R.B Gothi Jain College For Women</p>
-            
-            
+            <p><b>University of Madras</b> - B.Sc. Computer Science (2023-2026)</p>
         </div>
     </section>
 
     <section id="skills">
         <div class="section-content">
-            < ul></>
             <h2>Skills</h2>
-            <li>Python</li>
-            <li>java</li>
-            <li>c++</li>
-                
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>MS Word</li>
+                <li>MS Excel</li>
+                <li>PowerPoint</li>
             </ul>
         </div>
     </section>
@@ -150,47 +147,30 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">E Cart website</a></li>
-                <li><a href="#">Cloud Security IBM</a></li>
-                <li><a href="#">IBM chatbot</a></li>
-                <li><a href="#">College Portal</a></li> 
-                <!-- Add more project links here -->
+                <li><a href="#">Digital Portfolio Website</a></li>
             </ul>
         </div>
     </section>
 
     <section id="resume">
-    
-        <div class="section-content">
-            <center>
+        <div class="section-content" style="text-align: center;">
             <h2>Resume</h2>
-            <a href="file.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+            <!-- Corrected Resume Download Button -->
+            <a href=class=https://drive.google.com/file/d/1LaXeki8UndXDxdCPesebpYx-bIrlAMRy/view?usp=drivesdk class="download-button">Download CV</a>
+        </div> 
         </div>
-        
+    </section>
+
+    <section id="contact">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:jeniprincy978@gmail.com">jeniprincy978@gmail.com</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Pranesh S</p>
+        <p>&copy; 2025 Jeni Princy S. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
